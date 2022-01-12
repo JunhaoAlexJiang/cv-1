@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>ALEX简历</title>
+  </head>
+  <body>
+    <style id="style"></style>
+    <div id="demo"></div>
+    <div id="div1Wrapper">
+      <div id="div1"></div>
+    </div>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      #demo {
+        word-break: break-all;
+      }
+      #div1 {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+      }
+      @media (max-width: 500px) {
+        #demo {
+          height: 50vh;
+          overflow: auto;
+        }
+        #div1Wrapper {
+          height: 50vh;
+        }
+        #div1 {
+          position: relative;
+          left: 50%;
+          top: 25%;
+          transform: translateX(-50%);
+        }
+      } ;
+    </style>
+    <script src="main.js"></script>
+  </body>
+</html>
